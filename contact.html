@@ -2,6 +2,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./styles.css">
+        <script src="./contact.js" ></script>
         <title>E.N.M Portfolio</title>
     </head>
     <body>
@@ -10,9 +11,9 @@
                 <td class="logo" >E.N.M</td>
                 <td align="right">
                     <nav>
-                        <a href="/">Home</a>
-                        <a href="about.html">About me</a>
-                        <a href="contact.html">Contact Us</a>
+                        <a onClick="homePage()">Home</a>
+                        <a onClick="aboutPage()">About me</a>
+                        <a onClick="contactPage()">Contact Us</a>
                     </nav>
                 </td>
             </tr>
@@ -48,17 +49,8 @@
         <table>
             <tr>
                 <td class="contact-details">
-                    <div class="Address">
-                        <h3>Address</h3>
-                        <p>Pretoria <br />
-                            South Africa
-                        </p>
-                    </div>
-
-                    <div class="contact-num">
-                        <h3>Contacts</h3>
-                        <p><a href="tel:+27-79-553-5147">+27-79-553-5147</a></p>
-                    </div>
+                    <div id="address" class="Address"></div>
+                    <div id="contacts" class="contact-num"></div>
                 </td>
             </tr>
         </table>

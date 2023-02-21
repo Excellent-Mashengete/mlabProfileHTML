@@ -2,6 +2,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./styles.css">
+
         <title>E.N.M Portfolio</title>
     </head>
     <body >
@@ -10,38 +11,29 @@
                 <td class="logo" >E.N.M</td>
                 <td align="right">
                     <nav>
-                        <a href="/">Home</a>
-                        <a href="about.html">About me</a>
-                        <a href="contact.html">Contact Us</a>
+                        <a onClick="homePage()">Home</a>
+                        <a onClick="aboutPage()">About me</a>
+                        <a onClick="contactPage()">Contact Us</a>
                     </nav>
                 </td>
             </tr>
         </table>
-        <div>
-            <img src="./Assets/20221125_091810.jpg"  alt="">
-        </div>
+        <div id="bg_image"></div>
+
         <div class="mini-about">
             <table>
                 <tr>
                     <td class="first-tab" >
                         <div>
-                            <h1>Excellent Mashengete</h1>
-                            <p >
-                                Hi Everyone, I am Excellent Nhlanhla Mashengte a full-stack developer from South Africa
-                            </p>
-                            <p>
-                                I am an IT specialist with a focus on software development. I pride myself as hard-working that is not intimidatd by learning new technologies which will be beneficial when the company uses technologies that I'm familiar with
-                                Apart from coding, some other activities that I love to do!
-                            </p>
-                            <p>
-                                <li>Playing Games</li>
-                                <li>Reading</li>
-                            </p>
+                            <h1 id="name"></h1>
+                            <p id="intro"></p>
+                            <p id="intro_about"></p>
+                            <p id="hobbie"></p>
                         </div>
                     </td>
                     <td class="second-tab">
-                        <div >
-                            <img src="./Assets/99171357-removebg-preview.png" alt="">
+                        <div id="image" >
+                            
                         </div>
                     </td>
                 </tr>
@@ -53,12 +45,7 @@
         <table>
             <tr>
                 <td class="first-td">
-                    <div class="Address">
-                        <h3>Address</h3>
-                        <p>Pretoria <br />
-                            South Africa
-                        </p>
-                    </div>
+                    <div id="address" class="Address"></div>
 
                     <div class="link-icons" >
                         <a href="https://github.com/Excellent-Mashengete" target="_blank">
@@ -79,4 +66,6 @@
             </tr>
         </table>
     </footer>
+
+    <script src="./index.js" defer></script>
 </html>
